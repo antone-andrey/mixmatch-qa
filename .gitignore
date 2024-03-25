@@ -1,0 +1,6 @@
+cypress/downloads
+.github
+cypress/videos
+cypress/screenshots
+.env
+/node_modules

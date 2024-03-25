@@ -1,0 +1,26 @@
+{
+  "name": "qa-challenge-main",
+  "version": "1.0.0",
+  "description": ":speech_balloon: Presented challenge should give us idea about your skills in QA Automation if you would use or have in mind:",
+  "main": "index.js",
+  "scripts": {
+    "cy:open": "cypress open",
+    "cy:ui": "cypress run --e2e --spec \"cypress/e2e/ui/*.spec.ts\"",
+    "cy:ui:carts": "cypress run --e2e --spec \"cypress/e2e/ui/cartsTests.spec.ts\"",
+    "cy:ui:products": "cypress run --e2e --spec \"cypress/e2e/ui/productsTests.spec.ts\"",
+    "cy:ui:account": "cypress run --e2e --spec \"cypress/e2e/ui/signInPageTests.spec.ts\"",
+    "cy:api": "cypress run --e2e --spec \"cypress/e2e/api/*.spec.ts\"",
+    "cy:api:pet": "cypress run --e2e --spec \"cypress/e2e/api/pet.spec.ts\"",
+    "cy:api:store": "cypress run --e2e --spec \"cypress/e2e/api/store.spec.ts\""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@faker-js/faker": "^8.4.1",
+    "cypress": "^13.7.1",
+    "cypress-plugin-api": "^2.11.1"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.3"
+  }
+}
